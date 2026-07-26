@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NERD — Mountain Retreat &amp; Boutique Hotel</title>
+  <meta name="description" content="NERD is a refined mountain retreat offering curated alpine stays with organic architecture, serene interiors, and breathtaking views. Designed by VELURYN AGNECY.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo" id="logo">NERD</a>
+      <nav class="main-nav" id="main-nav">
+        <a href="#rooms" class="nav-link">Rooms</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About us</a>
+      </nav>
+      <div class="header-actions" id="header-actions">
+        <a href="#" class="btn btn-signup" id="btn-signup">Sign up</a>
+        <a href="#" class="btn btn-login" id="btn-login">Log in</a>
+      </div>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-image-wrapper">
+      <img src="images/hero.jpg" alt="Curved organic architecture nestled in alpine mountains at golden hour" class="hero-image">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-headline">Find out the best stay.</h1>
+      <p class="hero-subtext">NERD is a contemporary mountain retreat crafted for the ones who seek stillness.</p>
+      <a href="#rooms" class="btn btn-hero" id="btn-hero">Choose a room</a>
+    </div>
+  </section>
+
+  <!-- Alpine Feature Section -->
+  <section class="alpine-feature" id="services">
+    <div class="alpine-feature-inner">
+      <div class="alpine-left">
+        <span class="alpine-label">Alpine mornings, reimagined</span>
+        <h2 class="alpine-headline">Wake up to the Alps<br>like never before</h2>
+        <div class="alpine-cta">
+          <a href="#rooms" class="icon-btn" id="icon-btn-alpine" aria-label="Explore rooms">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <span class="alpine-cta-text">Choose a room</span>
+        </div>
+      </div>
+      <div class="alpine-right">
+        <img src="images/room-lake.jpg" alt="Luxury room interior with floor to ceiling windows overlooking lake and mountains" class="alpine-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Room Showcase -->
+  <section class="room-showcase" id="rooms">
+    <div class="room-showcase-inner">
+      <div class="room-card" id="room-alpine">
+        <div class="room-card-image-wrapper">
+          <img src="images/alpine-deluxe.jpg" alt="Alpine Deluxe Room with neutral tones and warm wood accents" class="room-card-image">
+        </div>
+        <div class="room-card-info">
+          <span class="room-card-name">Alpine Deluxe Room</span>
+          <a href="#" class="room-card-arrow" aria-label="View Alpine Deluxe Room">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="room-card" id="room-chalet">
+        <div class="room-card-image-wrapper">
+          <img src="images/chalet-suite.jpg" alt="Chalet Suite with wooden beams and warm ambient lighting" class="room-card-image">
+        </div>
+        <div class="room-card-info">
+          <span class="room-card-name">Chalet Suite</span>
+          <a href="#" class="room-card-arrow" aria-label="View Chalet Suite">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="room-card" id="room-skyline">
+        <div class="room-card-image-wrapper">
+          <img src="images/skyline-loft.jpg" alt="Skyline Loft with panoramic mountain views" class="room-card-image">
+        </div>
+        <div class="room-card-info">
+          <span class="room-card-name">Skyline Loft</span>
+          <a href="#" class="room-card-arrow" aria-label="View Skyline Loft">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full Bleed Spa Image -->
+  <section class="spa-bleed" id="about">
+    <img src="images/spa-pool.jpg" alt="Infinity pool with snow covered mountains in the background" class="spa-bleed-image">
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-tagline">
+          <p>Refined interiors, peaceful surroundings,<br>and a panorama that inspires every day.</p>
+        </div>
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h3 class="footer-col-title">Explore</h3>
+            <ul class="footer-col-links">
+              <li><a href="#rooms">Rooms</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col-title">Follow us</h3>
+            <ul class="footer-col-links">
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">X</a></li>
+              <li><a href="#">Pinterest</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col-title">Contact us</h3>
+            <ul class="footer-col-links">
+              <li><a href="mailto:stay@nerd.com">stay@nerd.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-credit">Made by VELURYN AGNECY</span>
+      </div>
+    </div>
+    <div class="footer-wordmark">
+      <span>NERD</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
