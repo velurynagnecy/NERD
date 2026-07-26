@@ -1,0 +1,107 @@
+/* ========================================
+   Alpine Feature Section
+   ======================================== */
+
+.alpine-feature {
+  padding: var(--space-3xl) var(--space-lg);
+  background-color: var(--color-bg);
+}
+
+.alpine-feature-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.alpine-left {
+  padding-right: var(--space-lg);
+}
+
+.alpine-label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.alpine-headline {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  margin-bottom: var(--space-xl);
+}
+
+.alpine-cta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-circle);
+  background-color: var(--color-text);
+  color: var(--color-white);
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.icon-btn:hover {
+  background-color: var(--color-accent);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.alpine-cta-text {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text);
+  letter-spacing: 0.01em;
+}
+
+.alpine-right {
+  position: relative;
+}
+
+.alpine-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+@media (max-width: 1024px) {
+  .alpine-feature-inner {
+    gap: var(--space-lg);
+  }
+  .alpine-left {
+    padding-right: var(--space-sm);
+  }
+}
+
+@media (max-width: 768px) {
+  .alpine-feature {
+    padding: var(--space-2xl) var(--space-md);
+  }
+  .alpine-feature-inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  .alpine-left {
+    padding-right: 0;
+  }
+}

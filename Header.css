@@ -1,0 +1,188 @@
+/* ========================================
+   Header
+   ======================================== */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0 var(--space-lg);
+  transition: background-color var(--duration-normal) var(--ease-smooth),
+              backdrop-filter var(--duration-normal) var(--ease-smooth);
+}
+
+.site-header.scrolled {
+  background-color: rgba(250, 250, 247, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+  transition: color var(--duration-normal) var(--ease-smooth);
+}
+
+.site-header.scrolled .logo {
+  color: var(--color-text);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.nav-link {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.85);
+  transition: color var(--duration-normal) var(--ease-smooth),
+              opacity var(--duration-fast) var(--ease-out);
+}
+
+.site-header.scrolled .nav-link {
+  color: var(--color-text-secondary);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.btn-signup {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: var(--color-white);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-signup:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  opacity: 1;
+}
+
+.site-header.scrolled .btn-signup {
+  background-color: var(--color-text);
+  color: var(--color-white);
+  border-color: var(--color-text);
+}
+
+.site-header.scrolled .btn-signup:hover {
+  background-color: #333330;
+}
+
+.btn-login {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--color-text);
+  border: 1px solid transparent;
+}
+
+.btn-login:hover {
+  background-color: var(--color-white);
+  opacity: 1;
+}
+
+.site-header.scrolled .btn-login {
+  background-color: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+.site-header.scrolled .btn-login:hover {
+  background-color: var(--color-bg-warm);
+}
+
+/* Mobile toggle */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 4px;
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background-color: var(--color-white);
+  transition: all var(--duration-normal) var(--ease-smooth);
+}
+
+.site-header.scrolled .mobile-menu-toggle span {
+  background-color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    padding: 0 var(--space-md);
+  }
+
+  .main-nav,
+  .header-actions {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .site-header.menu-open .main-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background-color: var(--color-bg);
+    padding: var(--space-lg) var(--space-md);
+    gap: var(--space-md);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .site-header.menu-open .main-nav .nav-link {
+    color: var(--color-text);
+    font-size: 1rem;
+  }
+
+  .site-header.menu-open .header-actions {
+    display: flex;
+    position: absolute;
+    top: calc(72px + 160px);
+    left: 0;
+    right: 0;
+    background-color: var(--color-bg);
+    padding: 0 var(--space-md) var(--space-lg);
+    justify-content: flex-start;
+    gap: var(--space-sm);
+  }
+
+  .site-header.menu-open .btn-signup {
+    background-color: var(--color-text);
+    color: var(--color-white);
+    border-color: var(--color-text);
+  }
+
+  .site-header.menu-open .btn-login {
+    background-color: transparent;
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+  }
+}
